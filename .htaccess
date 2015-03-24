@@ -33,6 +33,19 @@
 </ifModule>
 # do not use ETag
 FileETag None
+
+
+<IfModule mod_expires.c>
+          ExpiresActive on
+          ExpiresByType image/jpg "access plus 10 mins"
+          ExpiresByType image/png "access plus 10 mins"
+          ExpiresByType image/gif "access plus 10 mins"
+          ExpiresByType image/jpeg "access plus 10 mins"
+		  ExpiresByType text/css "access plus 10 mins"
+		  ExpiresByType text/javascript "access plus 10 mins"
+          ExpiresByType application/x-javascript "access plus 10 mins"
+          ExpiresByType application/javascript "access plus 10 mins"
+</IfModule>
     
     <ifModule mod_gzip.c>
 							mod_gzip_on Yes

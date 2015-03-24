@@ -12,20 +12,26 @@
     <meta property="og:description" content="Highly experienced IT professional in Web, application 
     Integration, Systems admin over 15 years in cross platform Management of Apple Linux and Windows
     Coding experience in HTML, CSS, PHP, Bash, Swift, Python." />
+
     <title>Matts Blog</title>
     <link rel="canonical" href="http://mrmstevenson.github.io/">
+    
     <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-social.css" rel="stylesheet">
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
-    <link href="http://mrmstevenson.github.io/index.xml" rel="alternate" type="application/rss+xml" title="My Blog" />
-    <script async src="/js/jquery.js"></script>
-    <script async src="/js/bootstrap.js"></script>
-    <script async src="/js/run_prettify.js"></script>
-    <script async src="https://google-code-prettify.googlecode.com/svn/loader/prettify.css"></script>
+    <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="My Blog" />
 </head>
 
 <body>
 <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -61,7 +67,7 @@
     idea what I'm talking about its ok only picked up this from London Mac Sys admins conference I was at. This may well be the 
     answer to scaling that infrastructure for applications supporting 1000's user populations out there. Still have questions
     Then head over to the Docker website click on there image below.</p>
-    <a href="http://www.docker.com" target="_blank"><img src="http://mrmstevenson.github.io/images/docker4.jpg" class="flr" alt="docker" width="90%" height="90%">
+    <a href="http://www.docker.com" target="_blank"><img src="http://mrmstevenson.github.io/images/docker.jpg" class="flr" alt="docker" width="90%" height="90%">
 </a>  
   </div>    
         
@@ -95,6 +101,7 @@
     </h3>
     <hr>
     <p>Having looked quite intricately at the differences bewteen the Samsung Galaxy Pro tab and Note tab the most obvious and sparkling one is the S-Pen. Not an ordinary stylus this one as it allows for S Air-Menu activation with functions like screen crop and annotation over any app even over the whole home screen. This tablet impressed me with its 12.2" screen and all the connectivity one could need. Its not the first droid to of shined to me brighter than an iOS. Its reduced from over £650 RRP down to £324 right now too. "</p>
+        <div class="fb-share-button" data-href="http://mrmstevenson.github.io" data-layout="icon_link" width="60" height="32"></div>
             </div>
         </div>
 
@@ -105,10 +112,10 @@
             <h4>Connect with me</h4>
         </div>
         <div class="panel-body">
-            <a href="http://www.linkedin.com/pub/matt-stevenson/71/12b/802/en" target="_blank"><img src="http://mrmstevenson.github.io/images/linkedin-icon.jpg" alt="MRMStevenson on Linkedin" width="31" height="31" hspace="2"></a>
-            <a href="https://www.facebook.com/matthew.stevenson.7374" target="_blank"><img src="http://mrmstevenson.github.io/images/fb-icon.jpg" alt="MRMStevenson on Facebook" width="31" height="31" hspace="2"></a>
-            <a href="https://github.com/mrmstevenson/" target="_blank"><img src="http://mrmstevenson.github.io/images/github2.jpg" alt="MRMStevenson on Github" width="34" height="37" hspace="2"></a>
-            <a href="https://twitter.com/digitalpilgrimz" target="_blank"><img src="http://mrmstevenson.github.io/images/twitter.jpg" alt="MRMStevenson on Twitter" width="34" height="37" hspace="2"></a> 
+            <a href="http://www.linkedin.com/pub/matt-stevenson/71/12b/802/en" target="_blank"><img src="http://mrmstevenson.github.io/images/linkedin-icon.png" alt="Linkedin MRMStevenson" width="32" height="32"></a>
+            <a href="https://www.facebook.com/matthew.stevenson.7374" target="_blank"><img src="http://mrmstevenson.github.io/images/fb-icon.png" alt="Facebook in MRMStevenson" width="32" height="32"></a>
+            <a href="https://github.com/mrmstevenson/" target="_blank" class="btn btn-primary btn-xs"><i class="fa fa-github-square fa-2x"></i></a>
+            <a href="https://twitter.com/digitalpilgrimz" target="_blank" class="btn btn-info btn-xs"><i class="fa fa-twitter-square fa-2x"></i></a>
         </div>
     </div>
 
@@ -118,9 +125,15 @@
             <div class="row">
                 <hr>
                 <div class="col-sm-12">
-                    <p>&copy; MRM Stevenson 2015</p>
+                    <p>&copy; MRM Stevenson 2015<br>
+                    Built with <a href="https://github.com/spf13/hugo" target="_blank">Hugo</a></p>
                 </div>
+            </div>
         </footer>
 </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 </body>
 </html>

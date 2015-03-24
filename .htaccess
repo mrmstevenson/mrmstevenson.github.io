@@ -15,6 +15,25 @@
     #  and can remove the `<IfModule mod_filter.c>` and `</IfModule>` lines
     #  as `AddOutputFilterByType` is still in the core directives).
     
+    <ifModule mod_headers.c>
+<ifModule mod_expires.c>
+  # images for 1 hour
+  <filesMatch "\.(jpeg|jpg|png|gif|flv|pdf|swf)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 10 mins"
+    Header set Cache-Control "public, max-age=360, must-revalidate"
+  </filesMatch>
+  # CSS and js for longer
+  <filesMatch "\.(ico|css|js|eot|ttf|ttc|otf|woff)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 3 mins"
+    Header set Cache-Control "public, max-age=180, must-revalidate"
+  </filesMatch>
+</ifModule>
+</ifModule>
+# do not use ETag
+FileETag None
+    
     <ifModule mod_gzip.c>
 							mod_gzip_on Yes
 							mod_gzip_dechunk Yes

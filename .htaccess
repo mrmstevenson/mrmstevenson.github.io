@@ -26,7 +26,7 @@
   # CSS and js for longer
   <filesMatch "\.(ico|css|js|eot|ttf|ttc|otf|woff)$">
     ExpiresActive On
-    ExpiresDefault "access plus 3 mins"
+    ExpiresDefault "access plus 10 mins"
     Header set Cache-Control "public, max-age=360, must-revalidate"
   </filesMatch>
 </ifModule>
